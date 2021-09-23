@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Found your country</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/estilos.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="container navbar-content">
+				<h1>Found your country</h1>
+				<button class="btn-dark-mode">
+					<i class="fas fa-moon"></i>
+					<i class="fas fa-sun"></i>
+					Dark Mode
+				</button>
+			</div>
+		</nav>
+
+		<header class="container filter-content my-2">
+			<form class="form-search" id="form">
+				<i class="fas fa-search"></i>
+				<input type="text" placeholder="Country name" id="name_pais" />
+			</form>
+			<div>
+				<select id="filtroSelect">
+					<option value="">Choose a Region</option>
+					<option value="all" id="all">All</option>
+					<option value="Africa" id="africa">África</option>
+					<option value="americas" id="americas">América</option>
+					<option value="Asia" id="asia">Asia</option>
+					<option value="Europe" id="europe">Europe</option>
+					<option value="Oceania" id="oceania">Oceanía</option>
+				</select>
+			</div>
+		</header>
+
+		<main class="container grid" id="banderas">
+			<template id="template">
+				<article class="card">
+					<img src="https://restcountries.eu/data/ala.svg" alt="" class="img-fluid" />
+					<div class="card-content">
+						<h3 class="card-content__title">Germany</h3>
+						<p class="card-content__population">
+							<b>Population: </b>
+							81.770.900
+						</p>
+						<p class="card-content__region">
+							<b>Region: </b>
+							Europe
+						</p>
+						<p class="card-content__capital">
+							<b>Capital: </b>
+							Berlín
+						</p>
+					</div>
+				</article>
+			</template>
+		</main>
+
+		<!-- El orden de los js es importante -->
+		<script src="js/darkmode.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/formulario.js"></script>
+		<script src="js/option.js"></script>
+	</body>
+</html>
