@@ -20,6 +20,3 @@ const formClient = async data => {
 		viewData2(arrayFilter);
 	});
 };
-
-
-

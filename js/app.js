@@ -6,10 +6,10 @@ const template = document.getElementById(`template`).content;
 const callApi = async () => {
 	try {
 		const dir = await fetch(`https://restcountries.com/v2/all`);
-		// https://restcountries.com/v2/continent/europe
 		const data = await dir.json();
 		// console.log(data);
 		formClient(data);
+		// viewData2(info_data);
 	} catch (error) {
 		// alert("");
 		// console.log(error);
