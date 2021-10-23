@@ -23,7 +23,7 @@ const viewData = info_data => {
 		// Diferencia entre concatenarlo y hacer con fragmnet ,con concaternacion cambias el valor o crear a elementos,mientras que con fragment estas creando elementos que despues es dificl accedes a ellos denuevo .
 		// Intentar hacer  con inner html.
 		elements += `<article class="card">
-					<img src="${element.flags[0]}" alt="${element.name}" class="img-fluid" />
+					<img src="${element.flag}" alt="${element.name}" class="img-fluid" />
 					<div class="card-content">
 						<h3 class="card-content__title">${element.name}</h3>
 						<p class="card-content__population">
@@ -54,7 +54,7 @@ const viewData2 = info_data => {
 		const population = template_copy.querySelector(`.card-content__population`);
 		const region = template_copy.querySelector(".card-content__region");
 		const capital = template_copy.querySelector(".card-content__capital");
-		imagen.setAttribute(`src`, `${element.flags[0]}`);
+		imagen.setAttribute(`src`, `${element.flag}`);
 		imagen.setAttribute("alt", `${element.name}`);
 		title.textContent = `${element.name}`;
 		population.innerHTML = `<b>Population: </b>${element.population}`;
