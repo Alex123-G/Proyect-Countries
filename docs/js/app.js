@@ -23,7 +23,7 @@ const viewData = info_data => {
 		// Diferencia entre concatenarlo y hacer con fragmnet ,con concaternacion cambias el valor o crear a elementos,mientras que con fragment estas creando elementos que despues es dificl accedes a ellos denuevo .
 		// Intentar hacer  con inner html.
 		elements += `<article class="card">
-					<img src="${element.flag}" alt="${element.name}" class="img-fluid" />
+					<img src=" ${element.flag} " alt="${element.name}" class="img-fluid" />
 					<div class="card-content">
 						<h3 class="card-content__title">${element.name}</h3>
 						<p class="card-content__population">
